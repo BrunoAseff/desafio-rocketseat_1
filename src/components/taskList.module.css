@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  width: 100%;
+  background: var(--gray-500);
+  padding: 1rem;
+  border-radius: 8px;
+  gap: 0.75rem;
+  align-items: center;
+  border: 1px solid var(--gray-400);
+}
+
+.radioWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  border: 2px solid var(--blue);
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  border-radius: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.input:hover {
+  border: 2px solid var(--purple-dark);
+  transition: 0.3;
+  cursor: pointer;
+}
+
+.checkedInput {
+  border: 2px solid var(--purple-dark);
+  background: var(--purple-dark);
+  appearance: none;
+  margin: 0;
+  border-radius: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.checkedInput:hover {
+  border: 2px solid var(--purple);
+  background: var(--purple);
+  transition: 0.3;
+  cursor: pointer;
+}
+
+.checkIcon {
+  position: absolute;
+  color: var(--gray-100);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.text {
+  margin-right: auto;
+  max-width: 85%;
+  color: var(--gray-100);
+}
+
+.checkedText {
+  margin-right: auto;
+  max-width: 85%;
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.trash {
+  color: var(--gray-300);
+  cursor: pointer;
+}
+
+.trash:hover {
+  color: var(--danger);
+}
